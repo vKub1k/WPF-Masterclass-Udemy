@@ -18,3 +18,4 @@ D:\0. Git\WPF-Masterclass-Udemy\Calculator\Calculator\obj\Debug\netcoreapp3.1\Ca
 D:\0. Git\WPF-Masterclass-Udemy\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.dll
 D:\0. Git\WPF-Masterclass-Udemy\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.pdb
 D:\0. Git\WPF-Masterclass-Udemy\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.genruntimeconfig.cache
+D:\0. Git\WPF-Masterclass-Udemy\Calculator\Calculator\obj\Debug\netcoreapp3.1\App.baml
