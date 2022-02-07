@@ -15,31 +15,46 @@ using System.Windows.Shapes;
 namespace DesktopContactsApp
 {
     /// <summary>
-    /// Interaction logic for NewContactWindow.xaml
+    /// Interaction logic for ContactDetailsWindow.xaml
     /// </summary>
-    public partial class NewContactWindow : Window
+    public partial class ContactDetailsWindow : Window
     {
-        public NewContactWindow()
+        Contact contact;
+
+        public ContactDetailsWindow(Contact contact)
         {
             InitializeComponent();
 
             Owner = Application.Current.MainWindow;
             WindowStartupLocation = WindowStartupLocation.CenterOwner;
+
+            this.contact = contact;
+
+            nameTextBox.Text = contact.Name;
+            emailTextBox.Text = contact.Email;
+            phoneTextBox.Text = contact.Phone;
         }
 
-        private void saveButton_Click(object sender, RoutedEventArgs e)
+        private void updateButton_Click(object sender, RoutedEventArgs e)
         {
-            Contact contact = new Contact()
+            using (SQLiteConnection connection = new SQLiteConnection(App.databasePath))
             {
-                Name = nameTextBox.Text,
-                Email = emailTextBox.Text,
-                Phone = phoneTextBox.Text
-            };
+                contact.Name = nameTextBox.Text;
+                contact.Email = emailTextBox.Text;
+                contact.Phone = phoneTextBox.Text;
+                connection.CreateTable<Contact>();
+                connection.Update(contact);
+            }
 
+            this.Close();
+        }
+
+        private void deleteButton_Click(object sender, RoutedEventArgs e)
+        {
             using (SQLiteConnection connection = new SQLiteConnection(App.databasePath))
             {
                 connection.CreateTable<Contact>();
-                connection.Insert(contact);
+                connection.Delete(contact);
             }
 
             this.Close();

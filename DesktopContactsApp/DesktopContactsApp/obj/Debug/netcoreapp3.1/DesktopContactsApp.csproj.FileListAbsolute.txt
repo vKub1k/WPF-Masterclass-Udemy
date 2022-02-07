@@ -4,7 +4,6 @@ D:\0. Git\WPF-Masterclass-Udemy\DesktopContactsApp\DesktopContactsApp\bin\Debug\
 D:\0. Git\WPF-Masterclass-Udemy\DesktopContactsApp\DesktopContactsApp\bin\Debug\netcoreapp3.1\DesktopContactsApp.runtimeconfig.dev.json
 D:\0. Git\WPF-Masterclass-Udemy\DesktopContactsApp\DesktopContactsApp\bin\Debug\netcoreapp3.1\DesktopContactsApp.dll
 D:\0. Git\WPF-Masterclass-Udemy\DesktopContactsApp\DesktopContactsApp\bin\Debug\netcoreapp3.1\DesktopContactsApp.pdb
-D:\0. Git\WPF-Masterclass-Udemy\DesktopContactsApp\DesktopContactsApp\obj\Debug\netcoreapp3.1\DesktopContactsApp.csproj.AssemblyReference.cache
 D:\0. Git\WPF-Masterclass-Udemy\DesktopContactsApp\DesktopContactsApp\obj\Debug\netcoreapp3.1\MainWindow.g.cs
 D:\0. Git\WPF-Masterclass-Udemy\DesktopContactsApp\DesktopContactsApp\obj\Debug\netcoreapp3.1\NewContactWindow.g.cs
 D:\0. Git\WPF-Masterclass-Udemy\DesktopContactsApp\DesktopContactsApp\obj\Debug\netcoreapp3.1\App.g.cs
@@ -39,3 +38,8 @@ D:\0. Git\WPF-Masterclass-Udemy\DesktopContactsApp\DesktopContactsApp\bin\Debug\
 D:\0. Git\WPF-Masterclass-Udemy\DesktopContactsApp\DesktopContactsApp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 D:\0. Git\WPF-Masterclass-Udemy\DesktopContactsApp\DesktopContactsApp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
 D:\0. Git\WPF-Masterclass-Udemy\DesktopContactsApp\DesktopContactsApp\obj\Debug\netcoreapp3.1\DesktopContactsApp.csproj.CopyComplete
+D:\0. Git\WPF-Masterclass-Udemy\DesktopContactsApp\DesktopContactsApp\obj\Debug\netcoreapp3.1\ContactDetailsWindow.g.cs
+D:\0. Git\WPF-Masterclass-Udemy\DesktopContactsApp\DesktopContactsApp\obj\Debug\netcoreapp3.1\ContactDetailsWindow.baml
+D:\0. Git\WPF-Masterclass-Udemy\DesktopContactsApp\DesktopContactsApp\obj\Debug\netcoreapp3.1\Controls\ContactControl.g.cs
+D:\0. Git\WPF-Masterclass-Udemy\DesktopContactsApp\DesktopContactsApp\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+D:\0. Git\WPF-Masterclass-Udemy\DesktopContactsApp\DesktopContactsApp\obj\Debug\netcoreapp3.1\Controls\ContactControl.baml

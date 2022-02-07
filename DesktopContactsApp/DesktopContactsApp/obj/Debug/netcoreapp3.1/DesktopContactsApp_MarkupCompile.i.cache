@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 D:\0. Git\WPF-Masterclass-Udemy\DesktopContactsApp\DesktopContactsApp\App.xaml
-2-1772605110
+4-993155439
 
-7-1410894968
+9582360667
 1971737880655
-MainWindow.xaml;NewContactWindow.xaml;
+ContactDetailsWindow.xaml;Controls\ContactControl.xaml;MainWindow.xaml;NewContactWindow.xaml;
 
-False
+True
 

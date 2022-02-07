@@ -22,6 +22,8 @@ namespace DesktopContactsApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Contact> contacts = new List<Contact>();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -33,16 +35,25 @@ namespace DesktopContactsApp
         {
             NewContactWindow newContactWindow = new NewContactWindow();
             newContactWindow.ShowDialog();
+
             ReadDatabase();
+        }
+
+        private void ClearButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
 
         void ReadDatabase()
         {
-            List<Contact> contacts;
             using (SQLiteConnection conn = new SQLiteConnection(App.databasePath))
             {
                 conn.CreateTable<Contact>();
-                contacts = conn.Table<Contact>().ToList();
+                contacts = conn.Table<Contact>().ToList().OrderBy(c => c.Name).ToList();
+
+                //var variable = from c2 in contacts
+                //               orderby c2.Name
+                //               select c2;
             }
 
             if (contacts != null)
@@ -59,9 +70,31 @@ namespace DesktopContactsApp
             }
         }
 
-        public void ClearButton_Click()
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
+            TextBox searchTextBox = sender as TextBox;
 
+            var filteredList = contacts.Where(c => c.Name.ToLower().Contains(searchTextBox.Text.ToLower())).ToList();
+
+            //var filterdList2 = (from c2 in contacts
+            //                   where c2.Name.ToLower().Contains(searchTextBox.Text.ToLower())
+            //                   orderby c2.Email
+            //                   select c2.Id).ToList();
+
+            contactsListView.ItemsSource = filteredList;
+        }
+
+        private void contactsListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Contact selectedContact = contactsListView.SelectedItem as Contact;
+
+            if (selectedContact != null)
+            {
+                var newContactWindow = new ContactDetailsWindow(selectedContact);
+                newContactWindow.ShowDialog();
+            }
+
+            ReadDatabase();
         }
     }
 }
