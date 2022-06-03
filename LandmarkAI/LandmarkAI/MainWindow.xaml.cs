@@ -50,7 +50,7 @@ namespace LandmarkAI
 
         private async void MakePredictionAsync(string fileName)
         {
-            string url = "api-url",
+            string url = "api-url", //TODO
                 predictionKey = "key",
                 contentType = "type";
             var file = File.ReadAllBytes(fileName);
@@ -63,6 +63,9 @@ namespace LandmarkAI
                 {
                     content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue(contentType);
                     var response = await client.PostAsync(url, content);
+
+                    var responseString = await response.Content.ReadAsStringAsync();
+
                 }
             }
         }
