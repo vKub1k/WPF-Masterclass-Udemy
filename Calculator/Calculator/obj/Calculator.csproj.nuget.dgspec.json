@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\0. Git\\WPF-Masterclass-Udemy\\Calculator\\Calculator\\Calculator.csproj": {}
+    "C:\\GIT\\WPF-Masterclass-Udemy\\Calculator\\Calculator\\Calculator.csproj": {}
   },
   "projects": {
-    "D:\\0. Git\\WPF-Masterclass-Udemy\\Calculator\\Calculator\\Calculator.csproj": {
+    "C:\\GIT\\WPF-Masterclass-Udemy\\Calculator\\Calculator\\Calculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\0. Git\\WPF-Masterclass-Udemy\\Calculator\\Calculator\\Calculator.csproj",
+        "projectUniqueName": "C:\\GIT\\WPF-Masterclass-Udemy\\Calculator\\Calculator\\Calculator.csproj",
         "projectName": "Calculator",
-        "projectPath": "D:\\0. Git\\WPF-Masterclass-Udemy\\Calculator\\Calculator\\Calculator.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\0. Git\\WPF-Masterclass-Udemy\\Calculator\\Calculator\\obj\\",
+        "projectPath": "C:\\GIT\\WPF-Masterclass-Udemy\\Calculator\\Calculator\\Calculator.csproj",
+        "packagesPath": "C:\\Users\\vlks\\.nuget\\packages\\",
+        "outputPath": "C:\\GIT\\WPF-Masterclass-Udemy\\Calculator\\Calculator\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vlks\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +57,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
