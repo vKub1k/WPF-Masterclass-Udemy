@@ -10,14 +10,11 @@
         "projectUniqueName": "D:\\0. Git\\WPF-Masterclass-Udemy\\DesktopContactsApp\\DesktopContactsApp\\DesktopContactsApp.csproj",
         "projectName": "DesktopContactsApp",
         "projectPath": "D:\\0. Git\\WPF-Masterclass-Udemy\\DesktopContactsApp\\DesktopContactsApp\\DesktopContactsApp.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\vkuby\\.nuget\\packages\\",
         "outputPath": "D:\\0. Git\\WPF-Masterclass-Udemy\\DesktopContactsApp\\DesktopContactsApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vkuby\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -66,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
