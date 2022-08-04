@@ -5,29 +5,33 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:WeatherApp.Application.View"
         xmlns:vm="clr-namespace:WeatherApp.Application.ViewModel"
+        xmlns:converters="clr-namespace:WeatherApp.Application.ViewModel.ValueConverter"
         mc:Ignorable="d"
         Title="WeatherWindow" Height="600" Width="400"
         ResizeMode="NoResize">
     <Window.Resources>
-        <vm:WeatherViewModel x:Key="vm" />
+        <vm:WeatherViewModel x:Key="Vm" />
+        <converters:BoolToRainConverter x:Key="BoolToRainConverter" />
     </Window.Resources>
-    <Grid DataContext="{StaticResource vm}">
+    <Grid DataContext="{StaticResource BoolToRainConverter}">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <StackPanel Margin="10">
             <TextBlock Text="Search for a city:" />
-            <TextBox Text="{Binding Query, Mode=TwoWay}" />
+            <TextBox Text="{Binding Query, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
             <Button Margin="0 10"
                     Content="Search"
-                    Command="{Binding SearchCommand}"/>
-            <ListView>
+                    Command="{Binding SearchCommand}"
+                    CommandParameter="{Binding Query}"/>
+             <ListView ItemsSource="{Binding Cities}"
+                       SelectedValue="{Binding SelectedCity}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid>
-                            <TextBlock />
+                            <TextBlock Text="{Binding LocalizedName}"/>
                         </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
@@ -45,16 +49,20 @@
                            Foreground="#f4f4f8"
                            FontSize="20"
                            Margin="20 0"
-                           DataContext="{StaticResource vm}" />
+                           DataContext="{StaticResource BoolToRainConverter}" />
                 <TextBlock Text="{Binding WeatherText}"
                            Foreground="#f4f4f8"
                            FontSize="18"
+                           Margin="20 0" />
+                <TextBlock Text="{Binding HasPrecipitation, Converter={StaticResource BoolToRainConverter}}"
+                           Foreground="#f4f4f8"
+                           FontSize="15"
                            Margin="20 0" />
             </StackPanel>
 
             <TextBlock Grid.Column="1"
                        VerticalAlignment="Center"
-                       Text="{Binding Temperature.Metric.Value}"
+                       Text="{Binding Temperature.Metric.Value, StringFormat={}{0}°C}"
                        Foreground="#f4f4f8"
                        FontSize="30"
                        Margin="20 0" />

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "PTCCZARG3zGffY8qvQIqvV+D7Jc4JOp8Z6DeUHG8kJN/4aQbsffmyHsekwhLz+EELw2oBrQMD8FVRNBVAEN/Ew==",
+  "dgSpecHash": "NNNwpbGv1D/TuugIULzDfvxkfx7irPtTUQREpn+S8RTSZ+gCOJgFRmZlCUVz6Ryui9bXdja7qKtKtyoGW5Lqng==",
   "success": true,
-  "projectFilePath": "C:\\GIT\\WPF-Masterclass-Udemy\\WeatherApp\\WeatherApp.Application\\WeatherApp.Application.csproj",
+  "projectFilePath": "D:\\0. Git\\WPF-Masterclass-Udemy\\WeatherApp\\WeatherApp.Application\\WeatherApp.Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\vlks\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\vkuby\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

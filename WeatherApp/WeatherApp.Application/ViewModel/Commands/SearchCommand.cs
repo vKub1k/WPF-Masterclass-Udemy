@@ -14,7 +14,9 @@ public class SearchCommand : ICommand
     
     public bool CanExecute(object? parameter)
     {
-        return true;
+        var query = parameter as string;
+        
+        return !string.IsNullOrWhiteSpace(query);
     }
 
     public void Execute(object? parameter)
@@ -22,5 +24,9 @@ public class SearchCommand : ICommand
         ViewModel.MakeQuery();
     }
 
-    public event EventHandler? CanExecuteChanged;
+    public event EventHandler? CanExecuteChanged
+    {
+        add => CommandManager.RequerySuggested += value;
+        remove => CommandManager.RequerySuggested -= value;
+    }
 }

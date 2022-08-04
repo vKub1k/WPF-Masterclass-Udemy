@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows;
@@ -26,28 +27,39 @@ public class WeatherViewModel : INotifyPropertyChanged
                 {
                     Metric = new MeasurementSystem
                     {
-                        Value = 21
+                        Value = "21"
                     }
                 }
             };
         }
 
         SearchCommand = new SearchCommand(this);
+
+        Cities = new ObservableCollection<City>();
+    }
+
+    private async void GetCurrentConditions()
+    {
+        Query = string.Empty;
+        Cities.Clear();
+        CurrentConditions =  await AccuWeatherHelper.GetCurrentConditions(SelectedCity.Key);
     }
     
-    private string query;
+    private string _query;
     public string Query
     {
-        get { return query; }
+        get => _query;
         set
         {
-            query = value;
+            _query = value;
             OnPropertyChanged("Query");
         }
     }
+
+    public ObservableCollection<City> Cities { get; set; }
     
-    private CurrentConditions _currentConditions;
-    public CurrentConditions CurrentConditions
+    private CurrentConditions? _currentConditions;
+    public CurrentConditions? CurrentConditions
     {
         get { return _currentConditions; }
         set
@@ -60,11 +72,14 @@ public class WeatherViewModel : INotifyPropertyChanged
     private City _selectedCity;
     public City SelectedCity
     {
-        get { return _selectedCity; }
+        get => _selectedCity;
         set
         {
             _selectedCity = value;
+            
             OnPropertyChanged("SelectedCity");
+
+            GetCurrentConditions();
         }
     }
 
@@ -75,6 +90,14 @@ public class WeatherViewModel : INotifyPropertyChanged
     public async void MakeQuery()
     {
         var cities = await AccuWeatherHelper.GetCities(Query);
+        
+
+        if (cities == null) return;
+        Cities.Clear();
+        foreach (var item in cities)
+        {
+            Cities.Add(item);
+        }
     }
     protected virtual void OnPropertyChanged([CallerMemberName] string? propertyName = null)
     {
