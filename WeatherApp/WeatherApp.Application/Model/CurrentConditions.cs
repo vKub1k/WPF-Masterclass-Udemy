@@ -2,14 +2,14 @@
 
 namespace WeatherApp.Application.Model;
 
-public abstract class MeasurementSystem
+public class MeasurementSystem
 {
     public int Value { get; set; }
     public string Unit { get; set; }
     public int UnitType { get; set; }
 }
 
-public abstract class Temperature
+public class Temperature
 {
     public MeasurementSystem Metric { get; set; }
     public MeasurementSystem Imperial { get; set; }

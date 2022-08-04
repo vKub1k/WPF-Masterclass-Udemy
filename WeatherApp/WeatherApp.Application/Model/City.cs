@@ -1,6 +1,6 @@
 ﻿namespace WeatherApp.Application.Model;
 
-public abstract class Localization
+public class Localization
 {
     public string ID { get; set; }
     public string LocalizedName { get; set; }
