@@ -1,5 +1,5 @@
 ﻿WeatherApp.Application
-
+1.0.0.0
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\GIT\WPF-Masterclass-Udemy\WeatherApp\WeatherApp.Application\App.xaml
 11521446561
 
-9476506099
+11545281342
 1951239437336
 View\WeatherWindow.xaml;
 
-False
+True
 
