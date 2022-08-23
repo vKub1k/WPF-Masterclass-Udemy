@@ -24,6 +24,13 @@
                           Click="MenuItem_OnClick"/>
             </MenuItem>
         </Menu>
+        
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem>
+                <TextBlock x:Name="StatusTextBlock"/>
+            </StatusBarItem>
+        </StatusBar>
+        
         <ListView DockPanel.Dock="Left"
                   Width="140"
                   SelectedValue="{Binding SelectedNotebook,
@@ -48,8 +55,17 @@
         
         <ToolBarTray DockPanel.Dock="Top">
             <ToolBar>
-                <Button Content="Speech"
-                        Click="SpeechButton_Click"/>
+                <Button Content="Speech to text" 
+                        Click="SpeechButton_Click"
+                        Width="Auto"/>
+                <Button x:Name="BoldButton"
+                        Width="22"
+                    Click="BoldButton_Click">
+                    <TextBlock Text="B"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"
+                               FontWeight="Bold"/>
+                </Button>
             </ToolBar>
         </ToolBarTray>
         
