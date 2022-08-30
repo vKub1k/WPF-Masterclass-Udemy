@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\GIT\WPF-Masterclass-Udemy\MyNote\MyNote\obj\Debug\net6.0-windows\
+D:\0. Git\WPF-Masterclass-Udemy\MyNote\MyNote\obj\Debug\net6.0-windows\
 MyNote
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\GIT\WPF-Masterclass-Udemy\MyNote\MyNote\App.xaml
-2-1246091782
+D:\0. Git\WPF-Masterclass-Udemy\MyNote\MyNote\App.xaml
+4-1329475440
 
-14-2117160159
-201-71580986
-View\LoginWindow.xaml;View\NotesWindow.xaml;
+181653963713
+202-1285443916
+View\LoginWindow.xaml;View\NotesWindow.xaml;View\UserControls\NotebookUserCtrl.xaml;View\UserControls\NoteUserCtrl.xaml;
 
 False
 

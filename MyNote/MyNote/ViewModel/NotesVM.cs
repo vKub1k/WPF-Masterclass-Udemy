@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Windows;
 using MyNote.Model;
 using MyNote.ViewModel.Commands;
 using MyNote.ViewModel.Helpers;
@@ -26,18 +27,35 @@ public class NotesVM : INotifyPropertyChanged
             GetNotes();
         }
     }
-    
+
+    private Visibility _isVisible;
+
+    public Visibility IsVisible
+    {
+        get => _isVisible;
+        set
+        {
+            _isVisible = value;
+            OnPropertyChanged("IsVisible");
+        }
+    }
     
     public  NewNotebookCommand NewNotebookCommand { get; set; }
     public  NewNoteCommand NewNoteCommand { get; set; }
+    public EditCommand EditCommand { get; set; }
+    public EditEndCommand EditEndCommand { get; set; }
 
     public NotesVM()
     {
         NewNotebookCommand = new NewNotebookCommand(this);
         NewNoteCommand = new NewNoteCommand(this);
-
+        EditCommand = new EditCommand(this);
+        EditEndCommand = new EditEndCommand(this);
+        
         Notebooks = new ObservableCollection<Notebook>();
         Notes = new ObservableCollection<Note>();
+
+        IsVisible = Visibility.Collapsed;
         
         GetNotebooks();
     }
@@ -103,5 +121,16 @@ public class NotesVM : INotifyPropertyChanged
         field = value;
         OnPropertyChanged(propertyName);
         return true;
+    }
+
+    public void StartEditing()
+    {
+        IsVisible = Visibility.Visible;
+    }
+    public void EndEditing(Notebook notebook)
+    {
+        IsVisible = Visibility.Collapsed;
+        DatabaseHelper.Update(notebook);
+        GetNotebooks();
     }
 }

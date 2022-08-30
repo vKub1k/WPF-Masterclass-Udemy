@@ -1,17 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "o/1Ae6YPSviCPXNWJYWztwRsUU2GAUncjXVdQLD9dOj5ZGJ8pQDZEku7PZP/g2NemepO7Y5p3kRjCdPYydw4GQ==",
+  "dgSpecHash": "6QyDQEWCM7Kei+BQRzrqU7fJ0wGspjLIeaaL910Pp1aSAlBW25+i08BAOusEEjvshfYZD94Rx4NZlrc8Fg0HGQ==",
   "success": true,
-  "projectFilePath": "C:\\GIT\\WPF-Masterclass-Udemy\\MyNote\\MyNote\\MyNote.csproj",
+  "projectFilePath": "D:\\0. Git\\WPF-Masterclass-Udemy\\MyNote\\MyNote\\MyNote.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\vlks\\.nuget\\packages\\microsoft.cognitiveservices.speech\\1.23.0\\microsoft.cognitiveservices.speech.1.23.0.nupkg.sha512",
-    "C:\\Users\\vlks\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
-    "C:\\Users\\vlks\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
-    "C:\\Users\\vlks\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
-    "C:\\Users\\vlks\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.4\\sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
-    "C:\\Users\\vlks\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.4\\sqlitepclraw.provider.dynamic_cdecl.2.0.4.nupkg.sha512",
-    "C:\\Users\\vlks\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
-    "C:\\Users\\vlks\\.nuget\\packages\\system.speech\\7.0.0-preview.7.22375.6\\system.speech.7.0.0-preview.7.22375.6.nupkg.sha512"
+    "C:\\Users\\vkuby\\.nuget\\packages\\microsoft.cognitiveservices.speech\\1.23.0\\microsoft.cognitiveservices.speech.1.23.0.nupkg.sha512",
+    "C:\\Users\\vkuby\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
+    "C:\\Users\\vkuby\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
+    "C:\\Users\\vkuby\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
+    "C:\\Users\\vkuby\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
+    "C:\\Users\\vkuby\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.4\\sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
+    "C:\\Users\\vkuby\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.4\\sqlitepclraw.provider.dynamic_cdecl.2.0.4.nupkg.sha512",
+    "C:\\Users\\vkuby\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\vkuby\\.nuget\\packages\\system.speech\\7.0.0-preview.7.22375.6\\system.speech.7.0.0-preview.7.22375.6.nupkg.sha512"
   ],
   "logs": []
 }

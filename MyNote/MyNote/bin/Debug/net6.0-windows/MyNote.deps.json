@@ -9,6 +9,7 @@
       "MyNote/1.0.0": {
         "dependencies": {
           "Microsoft.CognitiveServices.Speech": "1.23.0",
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.39",
           "System.Speech": "7.0.0-preview.7.22375.6",
           "sqlite-net-pcl": "1.8.116"
         },
@@ -306,6 +307,14 @@
           }
         }
       },
+      "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
+        "runtime": {
+          "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.39.4716"
+          }
+        }
+      },
       "sqlite-net-pcl/1.8.116": {
         "dependencies": {
           "SQLitePCLRaw.bundle_green": "2.0.4"
@@ -456,6 +465,13 @@
       "sha512": "sha512-7lGhBIFdZMTkDiSZWasPyIySeJ/j0OpGkzEeuoTUM5KEvsU+hvsaG8vR/QAGbPl/rRmVraeJtc6nHleVxvVEug==",
       "path": "microsoft.cognitiveservices.speech/1.23.0",
       "hashPath": "microsoft.cognitiveservices.speech.1.23.0.nupkg.sha512"
+    },
+    "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8PZKqw9QOcu42xk8puY4P1+EXHL9YGOR9b7qhaYx5cILHul456H073tj99vyPcCt0W0781T9RwHqkx507ZyUpQ==",
+      "path": "microsoft.xaml.behaviors.wpf/1.1.39",
+      "hashPath": "microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
     },
     "sqlite-net-pcl/1.8.116": {
       "type": "package",
