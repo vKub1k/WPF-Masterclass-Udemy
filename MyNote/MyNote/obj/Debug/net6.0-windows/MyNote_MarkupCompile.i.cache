@@ -1,5 +1,5 @@
 ﻿MyNote
-
+1.0.0.0
 
 winexe
 C#
@@ -12,7 +12,7 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\GIT\WPF-Masterclass-Udemy\MyNote\MyNote\App.xaml
 4-1329475440
 
-181653963713
+201038804108
 202-539344564
 View\LoginWindow.xaml;View\NotesWindow.xaml;View\UserControls\NotebookUserCtrl.xaml;View\UserControls\NoteUserCtrl.xaml;
 

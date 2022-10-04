@@ -5,10 +5,14 @@
       "Microsoft.CognitiveServices.Speech/1.23.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.dll": {}
+          "lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.dll": {}
+          "lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "build/Microsoft.CognitiveServices.Speech.props": {}
@@ -239,10 +243,14 @@
       "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
         "type": "package",
         "compile": {
-          "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {}
+          "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {}
+          "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
@@ -254,10 +262,14 @@
           "SQLitePCLRaw.bundle_green": "2.0.4"
         },
         "compile": {
-          "lib/netstandard2.0/SQLite-net.dll": {}
+          "lib/netstandard2.0/SQLite-net.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/SQLite-net.dll": {}
+          "lib/netstandard2.0/SQLite-net.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SQLitePCLRaw.bundle_green/2.0.4": {
@@ -375,10 +387,14 @@
       "System.Speech/7.0.0-preview.7.22375.6": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.Speech.dll": {}
+          "lib/net6.0/System.Speech.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/System.Speech.dll": {}
+          "lib/net6.0/System.Speech.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
@@ -849,24 +865,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vkuby\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\vlks\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\0. Git\\WPF-Masterclass-Udemy\\MyNote\\MyNote\\MyNote.csproj",
+      "projectUniqueName": "C:\\GIT\\WPF-Masterclass-Udemy\\MyNote\\MyNote\\MyNote.csproj",
       "projectName": "MyNote",
-      "projectPath": "D:\\0. Git\\WPF-Masterclass-Udemy\\MyNote\\MyNote\\MyNote.csproj",
-      "packagesPath": "C:\\Users\\vkuby\\.nuget\\packages\\",
-      "outputPath": "D:\\0. Git\\WPF-Masterclass-Udemy\\MyNote\\MyNote\\obj\\",
+      "projectPath": "C:\\GIT\\WPF-Masterclass-Udemy\\MyNote\\MyNote\\MyNote.csproj",
+      "packagesPath": "C:\\Users\\vlks\\.nuget\\packages\\",
+      "outputPath": "C:\\GIT\\WPF-Masterclass-Udemy\\MyNote\\MyNote\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\vkuby\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\vlks\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -915,7 +926,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -927,7 +939,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
