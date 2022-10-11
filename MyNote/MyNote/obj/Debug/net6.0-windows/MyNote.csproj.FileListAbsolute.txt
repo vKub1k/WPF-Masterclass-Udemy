@@ -248,3 +248,8 @@ D:\0. Git\WPF-Masterclass-Udemy\MyNote\MyNote\obj\Debug\net6.0-windows\View\User
 D:\0. Git\WPF-Masterclass-Udemy\MyNote\MyNote\obj\Debug\net6.0-windows\View\UserControls\NoteUserCtrl.g.cs
 D:\0. Git\WPF-Masterclass-Udemy\MyNote\MyNote\obj\Debug\net6.0-windows\View\UserControls\NoteUserCtrl.baml
 D:\0. Git\WPF-Masterclass-Udemy\MyNote\MyNote\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\GIT\WPF-Masterclass-Udemy\MyNote\MyNote\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\GIT\WPF-Masterclass-Udemy\MyNote\MyNote\obj\Debug\net6.0-windows\View\UserControls\NotebookUserCtrl.g.cs
+C:\GIT\WPF-Masterclass-Udemy\MyNote\MyNote\obj\Debug\net6.0-windows\View\UserControls\NoteUserCtrl.g.cs
+C:\GIT\WPF-Masterclass-Udemy\MyNote\MyNote\obj\Debug\net6.0-windows\View\UserControls\NotebookUserCtrl.baml
+C:\GIT\WPF-Masterclass-Udemy\MyNote\MyNote\obj\Debug\net6.0-windows\View\UserControls\NoteUserCtrl.baml
